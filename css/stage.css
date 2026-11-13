@@ -80,3 +80,10 @@
   .stg-foot [data-stg-tc]{display:none}
 }
 @media (max-width:700px){.stg.cl-open .stg-ctl{display:none}}
+
+/* button in the timeline readout */
+.tl-read{align-items:center}
+.tl-read .tl-tc{margin-left:auto}
+.tl-read .stg-btn{margin-left:14px;padding:3px 6px;border:1px solid #333;background:rgba(0,0,0,.35);color:var(--dim);line-height:0}
+.tl-read .stg-btn svg{width:18px;height:14px}
+.tl-read .stg-btn:hover,.tl-read .stg-btn:focus-visible{color:#000;background:var(--sel);border-color:var(--sel)}

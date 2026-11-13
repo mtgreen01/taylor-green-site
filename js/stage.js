@@ -1,10 +1,11 @@
 /* Easter egg: a hidden disguise-style stage view, opened from the tiny icon in the footer. */
 (function () {
-  var ftr = document.querySelector('.ftr'); if (!ftr) return;
+  // lives at the right end of the hero timeline readout (like d3's visualiser toggle); footer fallback elsewhere
+  var host = document.querySelector('.tl-read') || document.querySelector('.ftr'); if (!host) return;
   var btn = document.createElement('button');
   btn.className = 'stg-btn'; btn.type = 'button'; btn.setAttribute('aria-label', 'Stage view');
   btn.innerHTML = '<svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor"><path d="M1 11 L5 7 H15 L11 11 Z"/><rect x="6" y="1" width="8" height="5"/></svg>';
-  ftr.appendChild(btn);
+  btn.title = 'Stage view'; host.appendChild(btn);
 
   var box = document.createElement('div');
   box.className = 'stg'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-label', 'Stage view');

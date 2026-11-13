@@ -56,6 +56,36 @@ window.SHOWS = [
     "w": 792,
     "h": 990
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Caylee Robillard"
+   ],
+   [
+    "Lighting design",
+    "Zac Coren, Jacob VanVlymen"
+   ],
+   [
+    "Screens / content design",
+    "M99 Studios"
+   ],
+   [
+    "Production design",
+    "Zac Coren, Jacob VanVlymen"
+   ],
+   [
+    "Lighting direction",
+    "Matt Durham"
+   ],
+   [
+    "Lighting programming",
+    "Hunter Schneider"
+   ],
+   [
+    "Media server programming",
+    "Taylor Green"
+   ]
   ]
  },
  {
@@ -115,6 +145,76 @@ window.SHOWS = [
     "w": 1080,
     "h": 864
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Evan Woodrum"
+   ],
+   [
+    "Lighting design",
+    "Josh Beard"
+   ],
+   [
+    "Screens / content design",
+    "Josh Otto"
+   ],
+   [
+    "Production design",
+    "Colin Moore"
+   ],
+   [
+    "Lighting direction",
+    "Colin Moore"
+   ],
+   [
+    "Lighting programming",
+    "Josh Beard, Charlie Dresing, Bryan Landry, Taylor Green"
+   ],
+   [
+    "Media server programming",
+    "Taylor Green"
+   ]
+  ]
+ },
+ {
+  "slug": "passion-conference-2026",
+  "artist": "Passion Conference",
+  "show": "2026",
+  "year": 2026,
+  "role": "Lighting + Media Server Technical Director",
+  "featured": false,
+  "oldUrl": null,
+  "photos": [],
+  "credits": [
+   [
+    "Photography",
+    "Passion"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Josh Otto"
+   ],
+   [
+    "Production design",
+    "Nathan Paul Taylor"
+   ],
+   [
+    "Lighting direction",
+    "Davis Kornegay, Tyler Owings"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay"
+   ],
+   [
+    "Media server programming",
+    "Jonathan Laosy"
+   ]
   ]
  },
  {
@@ -125,7 +225,33 @@ window.SHOWS = [
   "role": "Screens + Lighting Programmer",
   "featured": false,
   "oldUrl": null,
-  "photos": []
+  "photos": [],
+  "credits": [
+   [
+    "Photography",
+    "Alex Kirchner, Jordan Munns, William Buck, Tom Grut"
+   ],
+   [
+    "Screens / content design",
+    "Josh Otto, FRAY Studio"
+   ],
+   [
+    "Production design",
+    "Rob Koenig"
+   ],
+   [
+    "Lighting direction",
+    "Colin Moore"
+   ],
+   [
+    "Lighting programming",
+    "Gordon Huxter, Taylor Green"
+   ],
+   [
+    "Media server programming",
+    "Taylor Green"
+   ]
+  ]
  },
  {
   "slug": "forward-conference-2025",
@@ -184,6 +310,36 @@ window.SHOWS = [
     "w": 1920,
     "h": 1281
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Forward Conference"
+   ],
+   [
+    "Lighting design",
+    "Michael Kamau"
+   ],
+   [
+    "Screens / content design",
+    "Wesley Garnett"
+   ],
+   [
+    "Production design",
+    "Michael Kamau, Mike Stigile"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green, Michael Kamau"
+   ],
+   [
+    "Lighting programming",
+    "Taylor Green, Michael Kamau"
+   ],
+   [
+    "Media server programming",
+    "Snapback Productions"
+   ]
   ]
  },
  {
@@ -243,6 +399,36 @@ window.SHOWS = [
     "w": 1920,
     "h": 1080
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Corey Kelly, Brandon Ferguson"
+   ],
+   [
+    "Lighting design",
+    "Mike Herkimer"
+   ],
+   [
+    "Screens / content design",
+    "Mike Herkimer"
+   ],
+   [
+    "Production design",
+    "Mike Herkimer"
+   ],
+   [
+    "Lighting direction",
+    "Mike Herkimer"
+   ],
+   [
+    "Lighting programming",
+    "Mike Herkimer"
+   ],
+   [
+    "Media server programming",
+    "Mike Herkimer, Taylor Green"
+   ]
   ]
  },
  {
@@ -302,6 +488,36 @@ window.SHOWS = [
     "w": 1080,
     "h": 1920
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Passion"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Josh Otto"
+   ],
+   [
+    "Production design",
+    "Nathan Paul Taylor"
+   ],
+   [
+    "Lighting direction",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay"
+   ],
+   [
+    "Media server programming",
+    "Josh Otto, Jonathan Laosy, Andy Rivas"
+   ]
   ]
  },
  {
@@ -325,6 +541,16 @@ window.SHOWS = [
     "w": 1920,
     "h": 1080
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Taylor Green"
+   ],
+   [
+    "Screens / content design",
+    "Dark Matter FX"
+   ]
   ]
  },
  {
@@ -384,6 +610,28 @@ window.SHOWS = [
     "w": 1920,
     "h": 1918
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Renee Rodriguez"
+   ],
+   [
+    "Screens / content design",
+    "Carrington Mitchell"
+   ],
+   [
+    "Production design",
+    "AAV Global, Winston Studios"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Harrison Coons"
+   ]
   ]
  },
  {
@@ -443,6 +691,32 @@ window.SHOWS = [
     "w": 1280,
     "h": 1920
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Tres Cox, Evan McGrew"
+   ],
+   [
+    "Screens / content design",
+    "Josh Otto"
+   ],
+   [
+    "Production design",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Charlie Dresing, Taylor Green"
+   ],
+   [
+    "Media server programming",
+    "Andy Rivas"
+   ]
   ]
  },
  {
@@ -502,6 +776,28 @@ window.SHOWS = [
     "w": 1920,
     "h": 1280
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Jalen Turner"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Production design",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Taylor Green"
+   ]
   ]
  },
  {
@@ -561,6 +857,32 @@ window.SHOWS = [
     "w": 1920,
     "h": 1277
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Passion"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Davis Kornegay, Josh Otto"
+   ],
+   [
+    "Production design",
+    "Nathan Paul Taylor"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green, Jacob Tulenson"
+   ],
+   [
+    "Media server programming",
+    "Josh Otto, Jonathan Laosy, Andy Rivas"
+   ]
   ]
  },
  {
@@ -620,6 +942,36 @@ window.SHOWS = [
     "w": 1536,
     "h": 1920
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Chris Villanueva, Evan Woodrum"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Josh Otto"
+   ],
+   [
+    "Production design",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Taylor Green"
+   ],
+   [
+    "Media server programming",
+    "Taylor Green"
+   ]
   ]
  },
  {
@@ -679,6 +1031,32 @@ window.SHOWS = [
     "w": 1920,
     "h": 970
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Passion"
+   ],
+   [
+    "Lighting design",
+    "Jacob Tulenson"
+   ],
+   [
+    "Screens / content design",
+    "Josh Otto"
+   ],
+   [
+    "Lighting direction",
+    "Jacob Tulenson"
+   ],
+   [
+    "Lighting programming",
+    "Jacob Tulenson"
+   ],
+   [
+    "Media server programming",
+    "Josh Otto"
+   ]
   ]
  },
  {
@@ -726,6 +1104,20 @@ window.SHOWS = [
     "w": 1920,
     "h": 1013
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Pullspark"
+   ],
+   [
+    "Production design",
+    "Pullspark"
+   ],
+   [
+    "Lighting programming",
+    "Taylor Green"
+   ]
   ]
  },
  {
@@ -749,6 +1141,28 @@ window.SHOWS = [
     "w": 1920,
     "h": 1078
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Taylor Green"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Production design",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay"
+   ]
   ]
  },
  {
@@ -808,6 +1222,28 @@ window.SHOWS = [
     "w": 1920,
     "h": 1280
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Evan Woodrum, Nate Black"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Production design",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay"
+   ]
   ]
  },
  {
@@ -867,6 +1303,36 @@ window.SHOWS = [
     "w": 1920,
     "h": 1280
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Passion"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Emile Frederick"
+   ],
+   [
+    "Production design",
+    "Nathan Paul Taylor"
+   ],
+   [
+    "Lighting direction",
+    "Davis Kornegay, Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay"
+   ],
+   [
+    "Media server programming",
+    "Josh Otto, Andy Rivas, Jonathan Laosy"
+   ]
   ]
  },
  {
@@ -914,6 +1380,36 @@ window.SHOWS = [
     "w": 1920,
     "h": 1280
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Eva Drennan"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Sunday Screens"
+   ],
+   [
+    "Production design",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay"
+   ],
+   [
+    "Media server programming",
+    "Taylor Green"
+   ]
   ]
  },
  {
@@ -973,6 +1469,36 @@ window.SHOWS = [
     "w": 1920,
     "h": 886
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Alex Yasser"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Josh Otto"
+   ],
+   [
+    "Production design",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting direction",
+    "Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay"
+   ],
+   [
+    "Media server programming",
+    "Taylor Green"
+   ]
   ]
  },
  {
@@ -1032,6 +1558,36 @@ window.SHOWS = [
     "w": 1920,
     "h": 1280
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Passion"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Josh Otto"
+   ],
+   [
+    "Production design",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting direction",
+    "Davis Kornegay, Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay, Taylor Green"
+   ],
+   [
+    "Media server programming",
+    "Josh Otto, Jonathan Laosy"
+   ]
   ]
  },
  {
@@ -1091,6 +1647,36 @@ window.SHOWS = [
     "w": 1920,
     "h": 1277
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Passion"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Emile Frederick"
+   ],
+   [
+    "Production design",
+    "Nathan Paul Taylor"
+   ],
+   [
+    "Lighting direction",
+    "Davis Kornegay, Trevor Rigsby, Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay, Will Flavin"
+   ],
+   [
+    "Media server programming",
+    "Grant McDonald, Jonathan Laosy, Josh Otto"
+   ]
   ]
  },
  {
@@ -1138,6 +1724,36 @@ window.SHOWS = [
     "w": 1920,
     "h": 1277
    }
+  ],
+  "credits": [
+   [
+    "Photography",
+    "Passion"
+   ],
+   [
+    "Lighting design",
+    "Davis Kornegay"
+   ],
+   [
+    "Screens / content design",
+    "Davis Kornegay, Josh Otto"
+   ],
+   [
+    "Production design",
+    "Davis Kornegay"
+   ],
+   [
+    "Lighting direction",
+    "Davis Kornegay, Taylor Green"
+   ],
+   [
+    "Lighting programming",
+    "Davis Kornegay, Taylor Green"
+   ],
+   [
+    "Media server programming",
+    "Josh Otto, Jonathan Laosy"
+   ]
   ]
  }
 ];

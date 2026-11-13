@@ -151,3 +151,7 @@ body.home main{margin-top:calc(-1 * var(--hdr-h,56px))}
   .tl-head{top:auto;bottom:0;height:26px}
   .hero-copy{bottom:calc(var(--margin) + 214px)}
 }
+
+/* the GO band opens the show page */
+.cue-go{text-decoration:none;cursor:pointer;transition:filter .15s}
+.cue-go:hover,.cue-go:focus-visible{filter:brightness(1.15);outline:none;box-shadow:inset 0 0 0 2px var(--sel)}

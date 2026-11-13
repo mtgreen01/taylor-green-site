@@ -185,12 +185,12 @@
       var ar = el('span', 'cue-ar', '→'); ar.setAttribute('aria-hidden', 'true'); b.appendChild(ar);
       var panel = el('div', 'cue-panel'); panel.id = id; panel.setAttribute('aria-hidden', 'true');
       var inner = el('div');
-      var go = el('div', 'cue-go'); go.appendChild(el('span', '', 'GO')); go.appendChild(el('span', '', 'Cue ' + n)); inner.appendChild(go);
+      var go = el('a', 'cue-go'); go.href = href(s); go.tabIndex = -1; go.setAttribute('aria-label', 'GO: open ' + title(s));
+      go.appendChild(el('span', '', 'GO →')); go.appendChild(el('span', '', 'Cue ' + n)); inner.appendChild(go);
       var has = s.photos && s.photos.length;
       if (has) inner.appendChild(el('div', 'cue-strip'));
       else inner.appendChild(el('p', 'cue-soon', 'Photos coming soon'));
-      var foot = el('div', 'cue-foot'), link = el('a', 'cue-link', 'View show →'); link.href = href(s); link.tabIndex = -1;
-      foot.appendChild(link); inner.appendChild(foot); panel.appendChild(inner);
+      panel.appendChild(inner);
       row.appendChild(b); row.appendChild(panel); box.appendChild(row);
 
       b.addEventListener('click', function () {
@@ -204,7 +204,7 @@
           });
         }
         row.classList.add('open'); b.setAttribute('aria-expanded', 'true'); panel.setAttribute('aria-hidden', 'false');
-        link.tabIndex = 0;
+        go.tabIndex = 0;
       });
     });
   })();

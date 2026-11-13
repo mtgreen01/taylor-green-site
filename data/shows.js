@@ -191,9 +191,40 @@ window.SHOWS = [
   "show": "2026",
   "year": 2026,
   "role": "Lighting + Media Server Technical Director",
-  "featured": false,
+  "featured": true,
   "oldUrl": null,
-  "photos": [],
+  "photos": [
+   {
+    "src": "assets/photos/passion-conference-2026/01.webp",
+    "thumb": "assets/photos/passion-conference-2026/01-sm.webp",
+    "w": 1920,
+    "h": 1280
+   },
+   {
+    "src": "assets/photos/passion-conference-2026/02.webp",
+    "thumb": "assets/photos/passion-conference-2026/02-sm.webp",
+    "w": 1920,
+    "h": 1280
+   },
+   {
+    "src": "assets/photos/passion-conference-2026/03.webp",
+    "thumb": "assets/photos/passion-conference-2026/03-sm.webp",
+    "w": 1920,
+    "h": 1281
+   },
+   {
+    "src": "assets/photos/passion-conference-2026/04.webp",
+    "thumb": "assets/photos/passion-conference-2026/04-sm.webp",
+    "w": 1920,
+    "h": 1280
+   },
+   {
+    "src": "assets/photos/passion-conference-2026/05.webp",
+    "thumb": "assets/photos/passion-conference-2026/05-sm.webp",
+    "w": 1920,
+    "h": 1280
+   }
+  ],
   "credits": [
    [
     "Photography",
@@ -236,7 +267,44 @@ window.SHOWS = [
   "role": "Screens + Lighting Programmer",
   "featured": false,
   "oldUrl": null,
-  "photos": [],
+  "photos": [
+   {
+    "src": "assets/photos/evanescence-australia-2025/01.webp",
+    "thumb": "assets/photos/evanescence-australia-2025/01-sm.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/photos/evanescence-australia-2025/02.webp",
+    "thumb": "assets/photos/evanescence-australia-2025/02-sm.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/photos/evanescence-australia-2025/03.webp",
+    "thumb": "assets/photos/evanescence-australia-2025/03-sm.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/photos/evanescence-australia-2025/04.webp",
+    "thumb": "assets/photos/evanescence-australia-2025/04-sm.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/photos/evanescence-australia-2025/05.webp",
+    "thumb": "assets/photos/evanescence-australia-2025/05-sm.webp",
+    "w": 1080,
+    "h": 1350
+   },
+   {
+    "src": "assets/photos/evanescence-australia-2025/06.webp",
+    "thumb": "assets/photos/evanescence-australia-2025/06-sm.webp",
+    "w": 1080,
+    "h": 1350
+   }
+  ],
   "credits": [
    [
     "Photography",
@@ -461,7 +529,7 @@ window.SHOWS = [
   "show": "2025",
   "year": 2025,
   "role": "Keylight Director + Programmer",
-  "featured": true,
+  "featured": false,
   "oldUrl": "/work/passion-conference-2025",
   "photos": [
    {
@@ -474,43 +542,25 @@ window.SHOWS = [
     "src": "assets/photos/passion-conference-2025/02.webp",
     "thumb": "assets/photos/passion-conference-2025/02-sm.webp",
     "w": 1920,
-    "h": 1280
+    "h": 1236
    },
    {
     "src": "assets/photos/passion-conference-2025/03.webp",
     "thumb": "assets/photos/passion-conference-2025/03-sm.webp",
     "w": 1920,
-    "h": 1280
+    "h": 1031
    },
    {
     "src": "assets/photos/passion-conference-2025/04.webp",
     "thumb": "assets/photos/passion-conference-2025/04-sm.webp",
     "w": 1920,
-    "h": 1280
+    "h": 1232
    },
    {
     "src": "assets/photos/passion-conference-2025/05.webp",
     "thumb": "assets/photos/passion-conference-2025/05-sm.webp",
     "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-conference-2025/06.webp",
-    "thumb": "assets/photos/passion-conference-2025/06-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-conference-2025/07.webp",
-    "thumb": "assets/photos/passion-conference-2025/07-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-conference-2025/08.webp",
-    "thumb": "assets/photos/passion-conference-2025/08-sm.webp",
-    "w": 1080,
-    "h": 1920
+    "h": 1097
    }
   ],
   "credits": [
@@ -685,20 +735,20 @@ window.SHOWS = [
    {
     "src": "assets/photos/maverick-city-good-news/02.webp",
     "thumb": "assets/photos/maverick-city-good-news/02-sm.webp",
-    "w": 1920,
-    "h": 1536
+    "w": 1536,
+    "h": 1920
    },
    {
     "src": "assets/photos/maverick-city-good-news/03.webp",
     "thumb": "assets/photos/maverick-city-good-news/03-sm.webp",
-    "w": 1536,
-    "h": 1920
+    "w": 1920,
+    "h": 1536
    },
    {
     "src": "assets/photos/maverick-city-good-news/04.webp",
     "thumb": "assets/photos/maverick-city-good-news/04-sm.webp",
     "w": 1920,
-    "h": 1281
+    "h": 1536
    },
    {
     "src": "assets/photos/maverick-city-good-news/05.webp",
@@ -710,18 +760,18 @@ window.SHOWS = [
     "src": "assets/photos/maverick-city-good-news/06.webp",
     "thumb": "assets/photos/maverick-city-good-news/06-sm.webp",
     "w": 1920,
-    "h": 1536
+    "h": 1372
    },
    {
     "src": "assets/photos/maverick-city-good-news/07.webp",
     "thumb": "assets/photos/maverick-city-good-news/07-sm.webp",
     "w": 1920,
-    "h": 1372
+    "h": 1281
    },
    {
     "src": "assets/photos/maverick-city-good-news/08.webp",
     "thumb": "assets/photos/maverick-city-good-news/08-sm.webp",
-    "w": 1280,
+    "w": 1281,
     "h": 1920
    }
   ],
@@ -779,8 +829,8 @@ window.SHOWS = [
    {
     "src": "assets/photos/one-hallelujah-tour/03.webp",
     "thumb": "assets/photos/one-hallelujah-tour/03-sm.webp",
-    "w": 1280,
-    "h": 1920
+    "w": 1920,
+    "h": 1280
    },
    {
     "src": "assets/photos/one-hallelujah-tour/04.webp",
@@ -797,8 +847,8 @@ window.SHOWS = [
    {
     "src": "assets/photos/one-hallelujah-tour/06.webp",
     "thumb": "assets/photos/one-hallelujah-tour/06-sm.webp",
-    "w": 1920,
-    "h": 1280
+    "w": 1280,
+    "h": 1920
    },
    {
     "src": "assets/photos/one-hallelujah-tour/07.webp",
@@ -876,23 +926,11 @@ window.SHOWS = [
     "src": "assets/photos/passion-conference-2024/05.webp",
     "thumb": "assets/photos/passion-conference-2024/05-sm.webp",
     "w": 1920,
-    "h": 1277
+    "h": 1280
    },
    {
     "src": "assets/photos/passion-conference-2024/06.webp",
     "thumb": "assets/photos/passion-conference-2024/06-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-conference-2024/07.webp",
-    "thumb": "assets/photos/passion-conference-2024/07-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-conference-2024/08.webp",
-    "thumb": "assets/photos/passion-conference-2024/08-sm.webp",
     "w": 1920,
     "h": 1277
    }
@@ -981,8 +1019,8 @@ window.SHOWS = [
    {
     "src": "assets/photos/reunion-tour-2-0/08.webp",
     "thumb": "assets/photos/reunion-tour-2-0/08-sm.webp",
-    "w": 1536,
-    "h": 1920
+    "w": 1920,
+    "h": 1280
    }
   ],
   "credits": [
@@ -1046,37 +1084,13 @@ window.SHOWS = [
     "src": "assets/photos/winter-weekend-2024/03.webp",
     "thumb": "assets/photos/winter-weekend-2024/03-sm.webp",
     "w": 1920,
-    "h": 1281
+    "h": 1280
    },
    {
     "src": "assets/photos/winter-weekend-2024/04.webp",
     "thumb": "assets/photos/winter-weekend-2024/04-sm.webp",
     "w": 1920,
-    "h": 1440
-   },
-   {
-    "src": "assets/photos/winter-weekend-2024/05.webp",
-    "thumb": "assets/photos/winter-weekend-2024/05-sm.webp",
-    "w": 1920,
     "h": 1281
-   },
-   {
-    "src": "assets/photos/winter-weekend-2024/06.webp",
-    "thumb": "assets/photos/winter-weekend-2024/06-sm.webp",
-    "w": 1920,
-    "h": 942
-   },
-   {
-    "src": "assets/photos/winter-weekend-2024/07.webp",
-    "thumb": "assets/photos/winter-weekend-2024/07-sm.webp",
-    "w": 1920,
-    "h": 772
-   },
-   {
-    "src": "assets/photos/winter-weekend-2024/08.webp",
-    "thumb": "assets/photos/winter-weekend-2024/08-sm.webp",
-    "w": 1920,
-    "h": 970
    }
   ],
   "credits": [
@@ -1137,24 +1151,6 @@ window.SHOWS = [
     "thumb": "assets/photos/chick-fil-a-engage/03-sm.webp",
     "w": 1920,
     "h": 1013
-   },
-   {
-    "src": "assets/photos/chick-fil-a-engage/04.webp",
-    "thumb": "assets/photos/chick-fil-a-engage/04-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/chick-fil-a-engage/05.webp",
-    "thumb": "assets/photos/chick-fil-a-engage/05-sm.webp",
-    "w": 1920,
-    "h": 1013
-   },
-   {
-    "src": "assets/photos/chick-fil-a-engage/06.webp",
-    "thumb": "assets/photos/chick-fil-a-engage/06-sm.webp",
-    "w": 1920,
-    "h": 1013
    }
   ],
   "credits": [
@@ -1187,12 +1183,6 @@ window.SHOWS = [
    {
     "src": "assets/photos/god-is-good-tour/01.webp",
     "thumb": "assets/photos/god-is-good-tour/01-sm.webp",
-    "w": 1920,
-    "h": 1078
-   },
-   {
-    "src": "assets/photos/god-is-good-tour/02.webp",
-    "thumb": "assets/photos/god-is-good-tour/02-sm.webp",
     "w": 1920,
     "h": 1078
    }
@@ -1248,7 +1238,7 @@ window.SHOWS = [
     "src": "assets/photos/its-time-tour/03.webp",
     "thumb": "assets/photos/its-time-tour/03-sm.webp",
     "w": 1920,
-    "h": 1281
+    "h": 1280
    },
    {
     "src": "assets/photos/its-time-tour/04.webp",
@@ -1266,7 +1256,7 @@ window.SHOWS = [
     "src": "assets/photos/its-time-tour/06.webp",
     "thumb": "assets/photos/its-time-tour/06-sm.webp",
     "w": 1920,
-    "h": 1280
+    "h": 1281
    },
    {
     "src": "assets/photos/its-time-tour/07.webp",
@@ -1338,29 +1328,11 @@ window.SHOWS = [
     "src": "assets/photos/passion-conference-2023/04.webp",
     "thumb": "assets/photos/passion-conference-2023/04-sm.webp",
     "w": 1920,
-    "h": 1277
+    "h": 1280
    },
    {
     "src": "assets/photos/passion-conference-2023/05.webp",
     "thumb": "assets/photos/passion-conference-2023/05-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-conference-2023/06.webp",
-    "thumb": "assets/photos/passion-conference-2023/06-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-conference-2023/07.webp",
-    "thumb": "assets/photos/passion-conference-2023/07-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-conference-2023/08.webp",
-    "thumb": "assets/photos/passion-conference-2023/08-sm.webp",
     "w": 1920,
     "h": 1280
    }
@@ -1423,24 +1395,6 @@ window.SHOWS = [
    {
     "src": "assets/photos/summer-worship-tour/03.webp",
     "thumb": "assets/photos/summer-worship-tour/03-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/summer-worship-tour/04.webp",
-    "thumb": "assets/photos/summer-worship-tour/04-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/summer-worship-tour/05.webp",
-    "thumb": "assets/photos/summer-worship-tour/05-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/summer-worship-tour/06.webp",
-    "thumb": "assets/photos/summer-worship-tour/06-sm.webp",
     "w": 1920,
     "h": 1280
    }
@@ -1516,23 +1470,17 @@ window.SHOWS = [
     "src": "assets/photos/the-reunion-tour/05.webp",
     "thumb": "assets/photos/the-reunion-tour/05-sm.webp",
     "w": 1920,
-    "h": 886
+    "h": 1282
    },
    {
     "src": "assets/photos/the-reunion-tour/06.webp",
     "thumb": "assets/photos/the-reunion-tour/06-sm.webp",
     "w": 1920,
-    "h": 1282
+    "h": 1283
    },
    {
     "src": "assets/photos/the-reunion-tour/07.webp",
     "thumb": "assets/photos/the-reunion-tour/07-sm.webp",
-    "w": 1920,
-    "h": 1283
-   },
-   {
-    "src": "assets/photos/the-reunion-tour/08.webp",
-    "thumb": "assets/photos/the-reunion-tour/08-sm.webp",
     "w": 1920,
     "h": 886
    }
@@ -1604,30 +1552,6 @@ window.SHOWS = [
     "thumb": "assets/photos/passion-camp-2022/04-sm.webp",
     "w": 1920,
     "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-camp-2022/05.webp",
-    "thumb": "assets/photos/passion-camp-2022/05-sm.webp",
-    "w": 1920,
-    "h": 1283
-   },
-   {
-    "src": "assets/photos/passion-camp-2022/06.webp",
-    "thumb": "assets/photos/passion-camp-2022/06-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-camp-2022/07.webp",
-    "thumb": "assets/photos/passion-camp-2022/07-sm.webp",
-    "w": 1920,
-    "h": 1280
-   },
-   {
-    "src": "assets/photos/passion-camp-2022/08.webp",
-    "thumb": "assets/photos/passion-camp-2022/08-sm.webp",
-    "w": 1920,
-    "h": 1280
    }
   ],
   "credits": [
@@ -1694,30 +1618,6 @@ window.SHOWS = [
    {
     "src": "assets/photos/passion-conference-2022/04.webp",
     "thumb": "assets/photos/passion-conference-2022/04-sm.webp",
-    "w": 1440,
-    "h": 964
-   },
-   {
-    "src": "assets/photos/passion-conference-2022/05.webp",
-    "thumb": "assets/photos/passion-conference-2022/05-sm.webp",
-    "w": 1440,
-    "h": 964
-   },
-   {
-    "src": "assets/photos/passion-conference-2022/06.webp",
-    "thumb": "assets/photos/passion-conference-2022/06-sm.webp",
-    "w": 1920,
-    "h": 1277
-   },
-   {
-    "src": "assets/photos/passion-conference-2022/07.webp",
-    "thumb": "assets/photos/passion-conference-2022/07-sm.webp",
-    "w": 1920,
-    "h": 1277
-   },
-   {
-    "src": "assets/photos/passion-conference-2022/08.webp",
-    "thumb": "assets/photos/passion-conference-2022/08-sm.webp",
     "w": 1920,
     "h": 1277
    }
@@ -1780,24 +1680,6 @@ window.SHOWS = [
    {
     "src": "assets/photos/passion-camp-2021/03.webp",
     "thumb": "assets/photos/passion-camp-2021/03-sm.webp",
-    "w": 1920,
-    "h": 1277
-   },
-   {
-    "src": "assets/photos/passion-camp-2021/04.webp",
-    "thumb": "assets/photos/passion-camp-2021/04-sm.webp",
-    "w": 1920,
-    "h": 1277
-   },
-   {
-    "src": "assets/photos/passion-camp-2021/05.webp",
-    "thumb": "assets/photos/passion-camp-2021/05-sm.webp",
-    "w": 1920,
-    "h": 1277
-   },
-   {
-    "src": "assets/photos/passion-camp-2021/06.webp",
-    "thumb": "assets/photos/passion-camp-2021/06-sm.webp",
     "w": 1920,
     "h": 1277
    }

@@ -95,12 +95,15 @@
       ruler.appendChild(t);
     });
     // preload
-    frames.forEach(function (f) { var i = new Image(); i.src = f.p.src; });
+    // preload the other frames only once someone starts scrubbing (keeps first load light)
+    var warmed = false;
+    function warm() { if (warmed) return; warmed = true; frames.forEach(function (f) { var i = new Image(); i.src = f.p.src; }); }
+    ['pointerenter', 'touchstart', 'focusin'].forEach(function (ev) { tl.parentNode.addEventListener(ev, warm, { passive: true, once: true }); });
     function render() {
       var i = Math.min(N - 1, Math.floor(pos * N));
       head.style.left = (pos * 100) + '%';
       tcEl.textContent = tc(pos * N * SEC_PER_FRAME);
-      track.setAttribute('aria-valuenow', Math.round(pos * 100));
+      ruler.setAttribute('aria-valuenow', Math.round(pos * 100));
       if (i === cur) return; cur = i;
       var f = frames[i]; img.src = f.p.src; img.alt = title(f.s);
       showEl.textContent = 'CUE 1.' + (f.si + 1) + ' — ' + title(f.s);
@@ -121,7 +124,7 @@
     if (matchMedia('(hover: hover)').matches) {
       tl.parentNode.addEventListener('pointermove', function (e) { if (!dragging && e.pointerType === 'mouse') at(e.clientX); });
     }
-    track.addEventListener('keydown', function (e) {
+    ruler.addEventListener('keydown', function (e) {
       var step = 1 / N;
       if (e.key === 'ArrowRight') pos = Math.min(.9999, pos + step);
       else if (e.key === 'ArrowLeft') pos = Math.max(0, pos - step);

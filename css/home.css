@@ -43,7 +43,7 @@ body.home main{margin-top:calc(-1 * var(--hdr-h,56px))}
 .tl-head::before{content:"";position:absolute;top:0;left:-4px;border:4.5px solid transparent;border-top:6px solid var(--sel)}
 @media (max-width:640px){.tl-tick span{display:none}.tl-tick.cue span{display:block}.hero-copy{bottom:calc(var(--margin) + 96px)}}
 .hero-tc{position:relative;z-index:60;display:inline-block;color:var(--rec);font-weight:500;line-height:.9;letter-spacing:-.04em;
-  font-size:clamp(22px,3.4vw,52px);font-variant-numeric:tabular-nums;white-space:nowrap}
+  font-size:clamp(16px,2.2vw,34px);font-variant-numeric:tabular-nums;white-space:nowrap}
 
 .hero-label{margin:20px 0 0;color:var(--fg);max-width:40ch;line-height:1.7}
 
@@ -180,3 +180,6 @@ body.home main{margin-top:calc(-1 * var(--hdr-h,56px))}
   .disc.open .disc-list{display:flex}
   .disc-list .disc-k{padding:11px 0;border-bottom:1px solid #161616;width:100%}
 }
+
+.hero-tc-wrap{position:relative;z-index:60;display:inline-flex;align-items:center;gap:8px}
+.hero-tc-tag{border:1px solid var(--rec);color:var(--rec);font-size:var(--t-xs);font-weight:500;letter-spacing:.16em;padding:2px 5px 1px;line-height:1}

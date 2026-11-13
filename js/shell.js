@@ -43,7 +43,7 @@
   // scroll progress line
   var bar=document.createElement('div'); bar.className='hdr-progress'; bar.setAttribute('aria-hidden','true'); hdr.appendChild(bar);
   var pRaf=0;
-  var goal=document.getElementById('selected');   // home: fills on the way to Selected work
+  var goal=document.getElementById('selected');   // home: fills on the way to Featured work
   function prog(){
     pRaf=0;
     var max = goal ? goal.getBoundingClientRect().top + scrollY - hdr.offsetHeight : document.documentElement.scrollHeight-innerHeight;

@@ -1,4 +1,4 @@
-/* Home page: intro, hero beam, selected work, cue-sheet work list. Built from window.SHOWS. */
+/* Home page: intro, hero beam, featured work, cue-sheet work list. Built from window.SHOWS. */
 (function () {
   'use strict';
   var SHOWS = window.SHOWS || [];
@@ -147,7 +147,7 @@
     render();
   })();
 
-  /* ---------- 2.0 selected work: MA-style cue sheet ---------- */
+  /* ---------- 2.0 featured work: MA-style cue sheet ---------- */
   (function featured() {
     var box = document.querySelector('[data-featured]'); if (!box) return;
     function row(cls, cells, tag) { var r = el(tag || 'div', 'ma-row ' + (cls || '')); cells.forEach(function (c) { r.appendChild(c); }); box.appendChild(r); return r; }

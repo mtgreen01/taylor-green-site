@@ -30,9 +30,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .hdr-name{font-weight:700;letter-spacing:.12em;white-space:nowrap}
 .hdr-tc{display:flex;gap:16px;align-items:center;color:var(--dim);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden}
 .hdr-tc .tc{color:var(--rec)}
-.hdr-nav{display:flex;gap:24px}
-.hdr-nav a{color:var(--dim);transition:color .15s}
-.hdr-nav a:hover{color:var(--fg)}
+.hdr-nav{display:flex;gap:32px}
+.hdr-nav a{color:var(--fg);font-size:13px;font-weight:500;letter-spacing:.16em;padding:8px 0;transition:color .15s}
+.hdr-nav a:hover{color:var(--sel)}
 .hdr-nav a[aria-current]{color:var(--sel)}
 .hdr-toggle{display:none;background:none;border:0;color:var(--fg);font:inherit;letter-spacing:inherit;text-transform:inherit;padding:8px 0;cursor:pointer}
 @media (max-width:760px){

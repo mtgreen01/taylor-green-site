@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Taylor Green — Lighting + screens design / programming</title>
+<meta name="description" content="Taylor Green — lighting and screens designer and programmer based in Atlanta, working worldwide on tours, festivals and events.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/stage.css">
+<script>try{if(sessionStorage.getItem('introSeen')==='1')document.documentElement.classList.add('intro-seen')}catch(e){}</script>
+<script src="data/shows.js" defer></script>
+<script src="js/shell.js" defer></script>
+<script src="js/home.js" defer></script>
+<script src="js/stage.js" defer></script>
+</head>
+<body class="home tc-big">
+<div id="intro" aria-hidden="true"><div class="mark"></div></div>
+
+<header class="hdr"><a class="hdr-name" href="index.html">Taylor Green</a><div class="hdr-tc"><span class="tc" data-tc>00:00:00:00</span><span class="cue" data-cue-label>CUE 1.0</span></div><nav class="hdr-nav"><a href="index.html#work">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></header>
+
+<main>
+  <section class="hero" data-cue="1.0" data-cue-name="Hero" id="top">
+    <div class="hero-stage" data-hero>
+      <img class="hero-img" data-hero-img src="assets/photos/evanescence-2026-world-tour/01.webp" alt="Evanescence 2026 World Tour">
+    </div>
+    <div class="hero-copy">
+      <h1 class="sr-only">Taylor Green — lighting and screens designer and programmer</h1>
+      <div class="tc-modes" role="group" aria-label="Timecode source"><button type="button" data-tc-mode="local">Local</button><button type="button" data-tc-mode="global">Global</button></div>
+      <div class="hero-tc" data-tc data-hero-tc aria-hidden="true">00:00:00:00</div>
+      <p class="hero-label">Lighting + screens — design / programming · Atlanta / worldwide</p>
+    </div>
+    <div class="tl" data-tl>
+      <div class="tl-read"><span class="tl-show" data-tl-show></span><span class="tl-tc" data-tl-tc>00:00:00:00</span></div>
+      <div class="tl-track" data-tl-track role="slider" tabindex="0" aria-label="Scrub through featured shows" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="tl-clips" data-tl-clips></div>
+        <div class="tl-ruler" data-tl-ruler></div>
+        <div class="tl-head" data-tl-head></div>
+      </div>
+    </div>
+  </section>
+
+  <section data-cue="2.0" data-cue-name="Selected work" id="selected">
+    <div class="opener"><span class="opener-label">2.0 — Selected work</span><h2 class="opener-title">Selected work</h2></div>
+    <div class="ma" data-featured role="list"></div>
+  </section>
+
+  <section data-cue="3.0" data-cue-name="Work list" id="work">
+    <div class="opener"><span class="opener-label">3.0 — Work list</span><h2 class="opener-title">Work list</h2></div>
+    <div class="cues" role="list" data-cues>
+      <div class="cues-head" aria-hidden="true"><span>Cue</span><span>Year</span><span>Show</span><span>Role</span><span></span></div>
+    </div>
+  </section>
+
+  <section data-cue="4.0" data-cue-name="Contact" id="contact">
+    <div class="opener"><span class="opener-label">4.0 — Contact</span><h2 class="opener-title">Contact</h2></div>
+    <div class="contact">
+      <p class="contact-line">Available for tours, festivals and events worldwide.</p>
+      <p class="contact-links"><a class="contact-email" href="mailto:hello@taylor.green">hello@taylor.green</a><a class="contact-more" href="contact.html">Contact page →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr"><a href="mailto:hello@taylor.green">hello@taylor.green</a><a href="https://instagram.com/_taylor_green" rel="noopener">Instagram</a><a href="privacy.html">Privacy</a><span>© <span data-year>2026</span> Taylor Green</span></footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# not part of the live site
+_bundle.tar
+prototypes/
+build/
+STANDARDS.md
+design-nasa-manual.md
+.DS_Store

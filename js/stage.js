@@ -36,7 +36,7 @@
   var view = box.querySelector('.stg-view'), world = box.querySelector('.stg-world');
   var res = box.querySelector('[data-stg-res]'), tcOut = box.querySelector('[data-stg-tc]');
   var narrow = matchMedia('(max-width:700px)');
-  var CAMS = { foh: [-14, -18, -6200], side: [-62, -16, -6600], top: [-4, -62, -7200] };
+  var CAMS = { foh: [0, -12, -6200], side: [-62, -16, -6600], top: [-4, -62, -7200] };
   function camZ(v) { return narrow.matches ? v - 5200 : v; }
   var ry = CAMS.foh[0], rx = CAMS.foh[1], z = camZ(CAMS.foh[2]), last = null, before = null, raf = 0;
   var ZMIN = -12000, ZMAX = -1500;
@@ -178,7 +178,7 @@
   box.querySelector('[data-cam="foh"]').classList.add('on');
   var hold = 0;
   function nudge(k) {
-    if (k === 'left') ry -= 3; else if (k === 'right') ry += 3;
+    if (k === 'left') ry += 3; else if (k === 'right') ry -= 3;
     else if (k === 'up') rx = Math.max(-70, rx - 2); else if (k === 'down') rx = Math.min(-3, rx + 2);
     else if (k === 'in') z = Math.min(ZMAX, z + 250); else if (k === 'out') z = Math.max(ZMIN, z - 250);
     else if (k === 'reset') { ry = CAMS.foh[0]; rx = CAMS.foh[1]; z = camZ(CAMS.foh[2]); ease(); return; }

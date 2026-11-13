@@ -155,3 +155,28 @@ body.home main{margin-top:calc(-1 * var(--hdr-h,56px))}
 /* the GO band opens the show page */
 .cue-go{text-decoration:none;cursor:pointer;transition:filter .15s}
 .cue-go:hover,.cue-go:focus-visible{filter:brightness(1.15);outline:none;box-shadow:inset 0 0 0 2px var(--sel)}
+
+/* discipline filter: a single line of text filters with status dots; dropdown on phones */
+.disc{padding:28px var(--margin) 18px}
+.disc-tog{display:none}
+.disc-list{display:flex;flex-wrap:wrap;gap:6px 28px;align-items:baseline}
+.disc-k{background:none;border:0;padding:6px 0;font:inherit;font-size:var(--t-xs);letter-spacing:.18em;text-transform:uppercase;color:var(--dim);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.disc-k::before{content:"";width:6px;height:6px;border-radius:50%;background:#333;transition:background .2s,box-shadow .2s}
+.disc-k sup{font-size:9px;letter-spacing:.05em;color:#555;font-variant-numeric:tabular-nums}
+.disc-k:hover{color:var(--fg)}
+.disc-k:focus-visible{outline:1px solid var(--sel);outline-offset:4px}
+.disc-k.on{color:var(--sel)}
+.disc-k.on::before{background:var(--sel);box-shadow:0 0 8px rgba(255,210,63,.6)}
+.disc-k.on sup{color:var(--sel)}
+.disc-k:disabled{opacity:.35;cursor:default}
+.cue.is-hidden{display:none}
+@media (max-width:700px){
+  .disc{padding:20px var(--margin) 12px}
+  .disc-tog{display:flex;width:100%;justify-content:space-between;align-items:center;background:none;border:0;border-bottom:1px solid var(--rule);padding:10px 0;font:inherit;font-size:var(--t-xs);letter-spacing:.18em;text-transform:uppercase;color:var(--fg);cursor:pointer}
+  .disc-cur{display:inline-flex;align-items:center;gap:8px}
+  .disc-cur::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--sel);box-shadow:0 0 8px rgba(255,210,63,.6)}
+  .disc-tog em{font-style:normal;color:var(--dim)}
+  .disc-list{display:none;flex-direction:column;gap:0}
+  .disc.open .disc-list{display:flex}
+  .disc-list .disc-k{padding:11px 0;border-bottom:1px solid #161616;width:100%}
+}

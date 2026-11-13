@@ -161,6 +161,38 @@
     addEventListener('scroll', req, { passive: true }); addEventListener('resize', req); req();
   })();
 
+  /* ---------- 3.0 discipline filter (desktop: one line of text filters; phone: a dropdown) ---------- */
+  function buildFilter(box) {
+    var NAMES = ['Technical direction', 'Show + systems design', 'Media server programming', 'Lighting programming', 'Screens producing'];
+    var rows = [].slice.call(box.querySelectorAll('.cue'));
+    var p2 = function (n) { return (n < 10 ? '0' : '') + n; };
+    var count = function (n) { return n ? SHOWS.filter(function (s) { return (s.disciplines || []).indexOf(n) > -1; }).length : SHOWS.length; };
+    var wrap = el('div', 'disc'); wrap.setAttribute('role', 'group'); wrap.setAttribute('aria-label', 'Filter work by discipline');
+    var tog = el('button', 'disc-tog'); tog.type = 'button'; tog.setAttribute('aria-expanded', 'false');
+    var list = el('div', 'disc-list');
+    function label(n) { tog.innerHTML = ''; tog.appendChild(el('span', 'disc-cur', 'Filter: ' + (n || 'All'))); tog.appendChild(el('em', '', p2(count(n)) + ' ▾')); }
+    function pick(n, btn) {
+      list.querySelectorAll('.disc-k').forEach(function (b) { b.classList.remove('on'); b.setAttribute('aria-pressed', 'false'); });
+      btn.classList.add('on'); btn.setAttribute('aria-pressed', 'true');
+      rows.forEach(function (r, i) {
+        var show = !n || (SHOWS[i].disciplines || []).indexOf(n) > -1;
+        r.classList.toggle('is-hidden', !show);
+        if (!show && r.classList.contains('open')) r.querySelector('.cue-btn').click();
+      });
+      label(n); wrap.classList.remove('open'); tog.setAttribute('aria-expanded', 'false');
+    }
+    [''].concat(NAMES).forEach(function (n, i) {
+      var b = el('button', 'disc-k' + (i ? '' : ' on')); b.type = 'button'; b.setAttribute('aria-pressed', i ? 'false' : 'true');
+      b.appendChild(document.createTextNode(n || 'All')); b.appendChild(el('sup', '', p2(count(n))));
+      if (!count(n)) b.disabled = true;
+      b.addEventListener('click', function () { pick(n, b); });
+      list.appendChild(b);
+    });
+    tog.addEventListener('click', function () { var o = wrap.classList.toggle('open'); tog.setAttribute('aria-expanded', o); });
+    label(''); wrap.appendChild(tog); wrap.appendChild(list);
+    box.parentNode.insertBefore(wrap, box);
+  }
+
   /* ---------- 3.0 work list ---------- */
   (function list() {
     var box = document.querySelector('[data-cues]'); if (!box) return;
@@ -207,5 +239,6 @@
         go.tabIndex = 0;
       });
     });
+    buildFilter(box);
   })();
 })();

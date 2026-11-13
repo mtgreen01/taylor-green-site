@@ -87,6 +87,9 @@
      "Media server programming",
      "Taylor Green"
     ]
+   ],
+   "disciplines": [
+    "Media server programming"
    ]
   },
   {
@@ -176,6 +179,11 @@
      "Media server programming",
      "Taylor Green"
     ]
+   ],
+   "disciplines": [
+    "Show + systems design",
+    "Media server programming",
+    "Lighting programming"
    ]
   },
   {
@@ -216,6 +224,9 @@
      "Media server programming",
      "Jonathan Laosy"
     ]
+   ],
+   "disciplines": [
+    "Technical direction"
    ]
   },
   {
@@ -252,6 +263,12 @@
      "Media server programming",
      "Taylor Green"
     ]
+   ],
+   "disciplines": [
+    "Show + systems design",
+    "Media server programming",
+    "Lighting programming",
+    "Screens producing"
    ]
   },
   {
@@ -341,6 +358,9 @@
      "Media server programming",
      "Snapback Productions"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -430,6 +450,10 @@
      "Media server programming",
      "Mike Herkimer, Taylor Green"
     ]
+   ],
+   "disciplines": [
+    "Media server programming",
+    "Screens producing"
    ]
   },
   {
@@ -519,6 +543,9 @@
      "Media server programming",
      "Josh Otto, Jonathan Laosy, Andy Rivas"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -552,6 +579,9 @@
      "Screens / content design",
      "Dark Matter FX"
     ]
+   ],
+   "disciplines": [
+    "Media server programming"
    ]
   },
   {
@@ -633,6 +663,9 @@
      "Lighting programming",
      "Harrison Coons"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -640,7 +673,7 @@
    "artist": "Maverick City",
    "show": "Good News",
    "year": 2024,
-   "role": "Lighting Director + Programmer",
+   "role": "Lighting Programmer + Director",
    "featured": false,
    "oldUrl": "/work/maverick-city-good-news",
    "photos": [
@@ -718,6 +751,9 @@
      "Media server programming",
      "Andy Rivas"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -725,7 +761,7 @@
    "artist": "One Hallelujah Tour",
    "show": "",
    "year": 2024,
-   "role": "Lighting Director + Programmer",
+   "role": "Lighting Programmer + Director",
    "featured": false,
    "oldUrl": "/work/one-hallelujah-tour",
    "photos": [
@@ -799,6 +835,9 @@
      "Lighting programming",
      "Taylor Green"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -884,6 +923,9 @@
      "Media server programming",
      "Josh Otto, Jonathan Laosy, Andy Rivas"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -973,6 +1015,11 @@
      "Media server programming",
      "Taylor Green"
     ]
+   ],
+   "disciplines": [
+    "Media server programming",
+    "Lighting programming",
+    "Screens producing"
    ]
   },
   {
@@ -980,7 +1027,7 @@
    "artist": "Winter Weekend",
    "show": "2024",
    "year": 2024,
-   "role": "LED Systems + Media Server Engineer",
+   "role": "Video + Media Server Engineer",
    "featured": false,
    "oldUrl": "/work/winter-weekend-2024",
    "photos": [
@@ -1058,6 +1105,11 @@
      "Media server programming",
      "Josh Otto"
     ]
+   ],
+   "disciplines": [
+    "Show + systems design",
+    "Media server programming",
+    "Screens producing"
    ]
   },
   {
@@ -1119,6 +1171,9 @@
      "Lighting programming",
      "Taylor Green"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -1164,6 +1219,9 @@
      "Lighting programming",
      "Davis Kornegay"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -1245,6 +1303,9 @@
      "Lighting programming",
      "Davis Kornegay"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -1334,6 +1395,9 @@
      "Media server programming",
      "Josh Otto, Andy Rivas, Jonathan Laosy"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -1411,6 +1475,9 @@
      "Media server programming",
      "Taylor Green"
     ]
+   ],
+   "disciplines": [
+    "Media server programming"
    ]
   },
   {
@@ -1418,7 +1485,7 @@
    "artist": "The Reunion Tour",
    "show": "",
    "year": 2023,
-   "role": "Lighting Director",
+   "role": "Lighting Director + Media Server Programmer",
    "featured": false,
    "oldUrl": "/work/the-reunion-tour",
    "photos": [
@@ -1500,6 +1567,10 @@
      "Media server programming",
      "Taylor Green"
     ]
+   ],
+   "disciplines": [
+    "Media server programming",
+    "Lighting programming"
    ]
   },
   {
@@ -1589,6 +1660,9 @@
      "Media server programming",
      "Josh Otto, Jonathan Laosy"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -1678,6 +1752,9 @@
      "Media server programming",
      "Grant McDonald, Jonathan Laosy, Josh Otto"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   },
   {
@@ -1755,6 +1832,9 @@
      "Media server programming",
      "Josh Otto, Jonathan Laosy"
     ]
+   ],
+   "disciplines": [
+    "Lighting programming"
    ]
   }
  ]

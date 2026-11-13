@@ -15,6 +15,8 @@
 .field input,.field textarea{width:100%;background:transparent;color:var(--fg);border:0;border-bottom:1px solid var(--rule);font:inherit;font-size:var(--t-m);padding:8px 0;border-radius:0}
 .field input:focus,.field textarea:focus{outline:0;border-color:var(--accent)}
 .field textarea{min-height:160px;resize:vertical}
+.form-status{min-height:1em;margin:0}.form-status.ok{color:var(--go)}.form-status.err{color:var(--rec)}
+.send:disabled{opacity:.5;cursor:wait}
 .hp{position:absolute;left:-9999px}
 .send{justify-self:start;background:var(--fg);color:#000;border:0;font:inherit;font-size:var(--t-xs);letter-spacing:.2em;text-transform:uppercase;font-weight:700;padding:16px 28px;cursor:pointer}
 .send:hover{background:var(--accent)}
@@ -32,16 +34,18 @@
 <section data-cue="2.0" data-cue-name="Enquiry">
   <hr class="rule">
   <div class="grid sec">
-    <!-- Replace YOUR_WEB3FORMS_KEY with the access key from https://web3forms.com (free; key is tied to hello@taylor.green). -->
+    <!-- Web3Forms (free plan, 250/month). This access key is public by design: it only lets the form send to hello@taylor.green. -->
     <form class="form" action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+      <input type="hidden" name="access_key" value="37956680-b4e7-49ac-b56d-7fdecfeeed49">
       <input type="hidden" name="subject" value="New enquiry from taylor.green">
+      <input type="hidden" name="from_name" value="taylor.green contact form">
       <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <label class="field"><span class="label">Name</span><input name="name" required autocomplete="name"></label>
       <label class="field"><span class="label">Email</span><input type="email" name="email" required autocomplete="email"></label>
       <label class="field"><span class="label">Project / dates</span><input name="project"></label>
       <label class="field"><span class="label">Message</span><textarea name="message" required></textarea></label>
       <button class="send" type="submit">Send</button>
+      <p class="label form-status" data-status role="status" aria-live="polite"></p>
     </form>
     <div class="direct">
       <div><span class="label">Email</span><a href="mailto:hello@taylor.green">hello@taylor.green</a></div>
@@ -52,5 +56,22 @@
 </main>
 <footer class="ftr"><a href="mailto:hello@taylor.green">hello@taylor.green</a><a href="https://instagram.com/_taylor_green" rel="noopener">Instagram</a><a href="privacy.html">Privacy</a><span class="ftr-copy">© <span data-year>2026</span> Taylor Green</span></footer>
 <script src="js/shell.js"></script>
+<script>
+(function(){
+  var f=document.querySelector('.form'), out=f&&f.querySelector('[data-status]'), btn=f&&f.querySelector('.send');
+  if(!f||!window.fetch) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); btn.disabled=true; out.className='label form-status'; out.textContent='Sending…';
+    fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok&&j.success,msg:j.message}})})
+      .then(function(res){
+        if(res.ok){ f.reset(); out.classList.add('ok'); out.textContent='Message sent. I\u2019ll be in touch soon.'; }
+        else { out.classList.add('err'); out.textContent='Something went wrong. Please email hello@taylor.green.'; }
+      })
+      .catch(function(){ out.classList.add('err'); out.textContent='Couldn\u2019t send. Please email hello@taylor.green.'; })
+      .then(function(){ btn.disabled=false; });
+  });
+})();
+</script>
 </body>
 </html>

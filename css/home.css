@@ -183,3 +183,13 @@ body.home main{margin-top:calc(-1 * var(--hdr-h,56px))}
 
 .hero-tc-wrap{position:relative;z-index:60;display:inline-flex;align-items:center;gap:8px}
 .hero-tc-tag{border:1px solid var(--rec);color:var(--rec);font-size:var(--t-xs);font-weight:500;letter-spacing:.16em;padding:2px 5px 1px;line-height:1}
+
+/* cue rows: inverted fill on hover (SAFDS-style) — yellow = selected/hover */
+.cue-btn>span{transition:transform .18s cubic-bezier(.2,.8,.2,1)}
+@media (hover:hover){
+  .cue-btn:hover{background:var(--sel);color:var(--bg)}
+  .cue-btn:hover .cue-n,.cue-btn:hover .cue-ar{color:var(--bg)}
+  .cue-btn:hover>span:not(.cue-ar){transform:translateX(6px)}
+}
+.cue-btn:focus-visible{background:var(--sel);color:var(--bg);outline:none}
+@media (prefers-reduced-motion:reduce){.cue-btn>span{transition:none}.cue-btn:hover>span{transform:none}}

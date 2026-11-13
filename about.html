@@ -6,6 +6,19 @@
 <meta name="description" content="Taylor Green is a lighting and screens designer and programmer based in Atlanta, working globally.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
+<style>
+.bio p{margin:0 0 1.1em;max-width:62ch}
+/* photo + bio: photo framed like a selected timeline clip / NASA-manual figure */
+.bio-wrap{grid-column:1/-1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gutter);align-items:start}
+.bio-fig{grid-column:1/5;margin:0;position:sticky;top:calc(var(--hdr-h) + 32px)}
+.bio-frame{position:relative;border:1px solid var(--sel);padding:10px;background:rgba(255,210,63,.04)}
+.bio-frame img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;filter:brightness(var(--lvl,1));transition:filter .1s linear}
+.bio-tab{position:absolute;top:-1px;left:-1px;transform:translateY(-100%);background:var(--sel);color:#000;padding:4px 8px;font-weight:700}
+.bio-fig figcaption{display:flex;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid var(--sel);color:var(--sel)}
+.bio-wrap .bio{grid-column:6/13;margin:0}
+@media (max-width:800px){.bio-fig{grid-column:1/-1;position:static;margin:24px 0 40px}.bio-wrap .bio{grid-column:1/-1}}
+@media (prefers-reduced-motion:reduce){.bio-frame img{transition:none}}
+</style>
 </head>
 <body>
 <header class="hdr"><a class="hdr-name" href="index.html">Taylor Green</a><div class="hdr-tc"><span class="tc" data-tc>00:00:00:00</span><span class="cue" data-cue-label>CUE 1.0</span></div><nav class="hdr-nav"><a href="index.html#work">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></header>
@@ -14,18 +27,31 @@
   <div class="grid sec">
     <span class="label">1.0 — About</span>
     <h1 class="xl" style="margin:12vh 0 64px">About</h1>
-    <!-- DRAFT bio: placeholder, Taylor to replace with final copy. -->
-    <p class="prose">Taylor Green is a lighting and screens designer and programmer based in Atlanta, working globally.</p>
+    <div class="bio-wrap">
+      <figure class="bio-fig">
+        <div class="bio-frame">
+          <span class="bio-tab label">Fig. 1</span>
+          <img src="assets/about/headshot.jpg" width="960" height="1200" alt="Taylor Green" data-fadeup>
+        </div>
+        <figcaption class="label"><span>Taylor Green</span><span>Atlanta</span></figcaption>
+      </figure>
+    <div class="prose bio">
+        <p>Taylor Green is a creative technologist and technical director based in Atlanta. He designs show systems, programs media servers and lighting consoles, and helps produce the big moments.</p>
+        <p>He&rsquo;s worked with world-class artists in rooms from clubs to stadiums, and travels wherever the show is.</p>
+        <p>His focus is where lighting and video meet: the systems, servers, and programming that hold a show together. He cares as much about a solid rig as a great-looking show.</p>
+      </div>
+    </div>
   </div>
 </section>
 <section data-cue="2.0" data-cue-name="Disciplines">
   <div class="opener"><span class="opener-label">2.0 — Disciplines</span><h2 class="opener-title">Disciplines</h2></div>
   <div class="grid sec">
     <ul class="spec">
-      <li><span class="label">2.1</span><span>Lighting design</span></li>
-      <li><span class="label">2.2</span><span>Lighting programming</span></li>
-      <li><span class="label">2.3</span><span>Screens / media server programming (disguise)</span></li>
-      <li><span class="label">2.4</span><span>Show direction</span></li>
+      <li><span class="label">2.1</span><span>Technical direction</span></li>
+      <li><span class="label">2.2</span><span>Show + systems design</span></li>
+      <li><span class="label">2.3</span><span>Media server programming</span></li>
+      <li><span class="label">2.4</span><span>Lighting programming</span></li>
+      <li><span class="label">2.5</span><span>Show direction</span></li>
     </ul>
   </div>
 </section>
@@ -38,5 +64,13 @@
 </main>
 <footer class="ftr"><a href="mailto:hello@taylor.green">hello@taylor.green</a><a href="https://instagram.com/_taylor_green" rel="noopener">Instagram</a><a href="privacy.html">Privacy</a><span class="ftr-copy">© <span data-year>2026</span> Taylor Green</span></footer>
 <script src="js/shell.js"></script>
+<script>
+/* fader fade-up: photo brightens as it scrolls into view (only reacts to scroll) */
+(function(){var im=document.querySelector('[data-fadeup]');if(!im)return;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var raf=0;function u(){raf=0;var r=im.getBoundingClientRect(),vh=innerHeight;
+    var p=Math.min(1,Math.max(0,(vh-r.top)/(vh*0.6)));im.style.setProperty('--lvl',(0.12+0.88*p).toFixed(3));}
+  addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(u)},{passive:true});addEventListener('resize',u);u();})();
+</script>
 </body>
 </html>

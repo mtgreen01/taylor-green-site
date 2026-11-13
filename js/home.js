@@ -122,8 +122,21 @@
     track.addEventListener('pointerup', function () { dragging = false; });
     // desktop: moving left/right across the hero also scrubs
     if (matchMedia('(hover: hover)').matches) {
-      tl.parentNode.addEventListener('pointermove', function (e) { if (!dragging && e.pointerType === 'mouse') at(e.clientX); });
+      track.addEventListener('pointermove', function (e) { if (!dragging && e.pointerType === 'mouse') at(e.clientX); });
     }
+    // plays on its own like a running show; pauses while the visitor is on the timeline
+    var hold = false, last = 0, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var LOOP = N * 3500; // ms for one pass, ~3.5s per frame
+    track.addEventListener('pointerenter', function () { hold = true; });
+    track.addEventListener('pointerleave', function () { if (!dragging) hold = false; });
+    track.addEventListener('pointerup', function (e) { if (e.pointerType !== 'mouse') hold = false; });
+    ruler.addEventListener('focus', function () { hold = true; });
+    ruler.addEventListener('blur', function () { hold = false; });
+    function tick(t) {
+      if (last && !hold && !document.hidden) { pos = (pos + (t - last) / LOOP) % 1; render(); }
+      last = t; requestAnimationFrame(tick);
+    }
+    if (!reduce) requestAnimationFrame(tick);
     ruler.addEventListener('keydown', function (e) {
       var step = 1 / N;
       if (e.key === 'ArrowRight') pos = Math.min(.9999, pos + step);

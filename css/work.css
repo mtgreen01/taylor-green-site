@@ -24,7 +24,7 @@
 /* credits: a spec table under the year / role line */
 .credits{grid-column:1/-1;margin:40px 0 0;display:grid;grid-template-columns:1fr;border-top:1px solid var(--rule)}
 .credits>div{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--rule)}
-.credits dt{color:var(--dim);padding-top:3px}
+.credits dt{color:#a6a6a6;font-size:13px;padding-top:2px}
 .credits dd{margin:0;font-size:var(--t-s);line-height:1.5}
 @media (min-width:900px){.credits{grid-column:5/13}}
 @media (max-width:560px){.credits>div{grid-template-columns:1fr;gap:4px}}
